@@ -2,20 +2,20 @@ manifest:
   remotes:
   - name: zmkfirmware
     url-base: https://github.com/zmkfirmware
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+  - name: caksoylar
+    url-base: https://github.com/caksoylar
+  - name: kilipan
+    url-base: https://github.com/kilipan
   projects:
   - name: zmk
     remote: zmkfirmware
     revision: main
     import: app/west.yml
   - name: zmk-keyboards-zilpzalp
-    url: https://github.com/kilipan/zmk-keyboards-zilpzalp
+    remote: kilipan
     revision: main
-    path: modules/zmk-keyboards-zilpzalp
   - name: zmk-rgbled-widget
-    url: https://github.com/caksoylar/zmk-rgbled-widget
+    remote: caksoylar
     revision: main
-    path: modules/zmk-rgbled-widget
   self:
     path: config
