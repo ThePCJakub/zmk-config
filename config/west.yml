@@ -2,20 +2,26 @@ manifest:
   remotes:
   - name: zmkfirmware
     url-base: https://github.com/zmkfirmware
+  - name: petejohanson
+    url-base: https://github.com/petejohanson
   - name: caksoylar
     url-base: https://github.com/caksoylar
   - name: kilipan
     url-base: https://github.com/kilipan
   projects:
+    # - name: zmk
+    # remote: zmkfirmware
+    # revision: main
+    # import: app/west.yml
   - name: zmk
-    remote: zmkfirmware
-    revision: main
+    remote: petejohanson
+    revision: feat/pointers-move-scroll
     import: app/west.yml
-  - name: zmk-keyboards-zilpzalp
-    remote: kilipan
-    revision: main
   - name: zmk-rgbled-widget
     remote: caksoylar
+    revision: main
+  - name: zmk-keyboards-zilpzalp
+    remote: kilipan
     revision: main
   self:
     path: config
