@@ -8,8 +8,6 @@ manifest:
     url-base: https://github.com/caksoylar
   - name: kilipan
     url-base: https://github.com/kilipan
-  - name: grassfedreeve
-    url-base: https://github.com/grassfedreeve/
   projects:
     # - name: zmk
     # remote: zmkfirmware
@@ -23,7 +21,7 @@ manifest:
     remote: caksoylar
     revision: main
   - name: zmk-keyboards-zilpzalp
-    remote: grassfedreeve
+    remote: kilipan
     revision: main
   self:
     path: config
