@@ -1,3 +1,4 @@
 include:
   - board: seeeduino_xiao_ble
     shield: zilpzalp_ble rgbled_adapter
+    # snippet: studio-rpc-usb-uart
