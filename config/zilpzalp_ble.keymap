@@ -274,12 +274,14 @@
 
         navigation {
             label = "NAV";
-            bindings = <
-           &kp LA(F4)     &kp LG(LEFT)     &kp LG(RIGHT)             &kp LC(W)  &kp PAGE_UP    &kp PRINTSCREEN   &kp UP             &kp HOME
-&kp LC(Z)  &kp LC(LS(T))  &kp LS(LC(TAB))  &kp LS(TAB)               &kp LC(A)  &kp PAGE_DOWN  &kp LEFT          &kp DOWN           &kp RIGHT             &kp END
-           &kp LC(X)      &kp LC(C)        &mt LS(LC(V)) LS(INSERT)                            &kp LC(LS(LEFT))  &kp LS(LC(RIGHT))  &kp LS(LC(UP_ARROW))
-                                           &trans                    &trans     &mo 2          &mo 2
-            >;
+	    bindings = <
+				&kp LA(F4)	&kp LG(LEFT)	&kp LG(RIGHT)	&kp LC(W)		&kp PAGE_UP	&kp PRINTSCREEN		&kp UP			&kp HOME
+		&kp LC(Z)	&kp LC(LS(T))	&kp LS(LC(TAB))	&kp LS(TAB)	&kp LC(A)		&kp PAGE_DOWN	&kp LEFT		&hr DOWN		&kp RIGHT	&kp END
+				&kp LC(X)	&kp LC(C)	&mt LS(LC(V)) LS(INSERT)				&kp LS(LC(LEFT))	&kp LS(LC(RIGHT))	&kp LS(LC(UP_ARROW))
+
+								&trans		&trans			&mo 2		&mo 2			
+	    >;
+
         };
 
         symbols {
