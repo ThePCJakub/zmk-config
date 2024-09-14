@@ -9,14 +9,14 @@ manifest:
   - name: kilipan
     url-base: https://github.com/kilipan
   projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
     # - name: zmk
-    # remote: zmkfirmware
-    # revision: main
+    # remote: petejohanson
+    # revision: feat/pointers-move-scroll
     # import: app/west.yml
-  - name: zmk
-    remote: petejohanson
-    revision: feat/pointers-move-scroll
-    import: app/west.yml
   - name: zmk-rgbled-widget
     remote: caksoylar
     revision: main
