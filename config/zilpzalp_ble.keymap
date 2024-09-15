@@ -273,9 +273,9 @@
             >;
 	    */
             bindings = <
-				&kp LA(F4)	&kp LG(LEFT)	&kp LG(RIGHT)	&kp LC(W)		&kp PAGE_UP	&kp none		&kp none		&kp none
+				&kp LA(F4)	&kp LG(LEFT)	&kp LG(RIGHT)	&kp LC(W)		&kp PAGE_UP	&none			&none			&none
 		&kp LC(Z)	&kp LC(LS(T))	&kp LS(LC(TAB))	&kp LS(TAB)	&kp LC(A)		&kp PAGE_DOWN	&kp LEFT		&kp DOWN		&kp UP		&kp RIGHT
-				&kp LC(X)	&kp LC(C)	&mt LS(LC(V)) LS(INSERT)				&kp HOME		&kp none		&kp END
+				&kp LC(X)	&kp LC(C)	&mt LS(LC(V)) LS(INSERT)				&kp HOME		&none			&kp END
 
 								&trans		&trans			&mo 2		&trans
             >;
