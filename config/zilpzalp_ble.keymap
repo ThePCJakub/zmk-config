@@ -13,13 +13,6 @@
 
         /* usually on base layer */
 
-        qu {
-            timeout-ms = <40>;
-            key-positions = <2 1>;
-            bindings = <&qu>;
-            layers = <0>;
-        };
-
         z {
             timeout-ms = <40>;
             key-positions = <19 18>;
@@ -36,7 +29,7 @@
 
         q {
             timeout-ms = <40>;
-            key-positions = <20 19>;
+            key-positions = <2 1>;
             bindings = <&kp Q>;
             layers = <0>;
         };
@@ -156,7 +149,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <9 11>;
+            key-positions = <0 2>;
         };
 
         softoff {
@@ -181,7 +174,7 @@
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <0 2>;
+            key-positions = <9 11>;
         };
 
         delword {
@@ -249,15 +242,6 @@
         };
     };
 
-    macros {
-        qu: qu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Q &kp U>;
-            label = "QU";
-        };
-    };
-
 //     __________________________  __________________________
 //    /     0  |  1  |  2  |  3  \/   4 |   5 |   6 |   7    \
 // |  8  |  9  | 10  | 11  | 12  /\  13 |  14 |  15 |  16 | 17  |
@@ -271,7 +255,7 @@
         aptmak {
 	    bindings = <
 				&kp W		&kp F		&kp P		&kp B			&kp J		&kp L		&kp U		&kp Y
-		&hl LSHFT R	&hl LCTRL S	&hl LALT T	&hl LGUI H	&kp K			&kp X		&hr RGUI N	&hr LALT A	&hr RCTRL I	&hr RSHFT O
+		&hl LALT R	&hl LSHFT S	&hl LCTRL T	&hl LGUI H	&kp K			&kp X		&hr RGUI N	&hr RCTRL A	&hr RSHFT I	&hr LALT O
 				&kp C		&kp G		&kp D							&kp M		&comsem		&dotcol
 
 								&none		&lt 1 SPACE		&lt 2 E		&none			
@@ -279,12 +263,21 @@
         };
 
         nav {
+	    /*
             bindings = <
 				&kp LA(F4)	&kp LG(LEFT)	&kp LG(RIGHT)	&kp LC(W)		&kp PAGE_UP	&kp PRINTSCREEN		&kp UP			&kp HOME
 		&kp LC(Z)	&kp LC(LS(T))	&kp LS(LC(TAB))	&kp LS(TAB)	&kp LC(A)		&kp PAGE_DOWN	&kp LEFT		&kp DOWN		&kp RIGHT	&kp END
 				&kp LC(X)	&kp LC(C)	&mt LS(LC(V)) LS(INSERT)				&kp LC(LS(LEFT))	&kp LS(LC(RIGHT))	&kp LS(LC(UP_ARROW))
 
-								&trans		&trans			&mo 2		&mo 2
+								&trans		&trans			&mo 2		&trans
+            >;
+	    */
+            bindings = <
+				&kp LA(F4)	&kp LG(LEFT)	&kp LG(RIGHT)	&kp LC(W)		&kp PAGE_UP	&kp none		&kp none		&kp none
+		&kp LC(Z)	&kp LC(LS(T))	&kp LS(LC(TAB))	&kp LS(TAB)	&kp LC(A)		&kp PAGE_DOWN	&kp LEFT		&kp DOWN		&kp UP		&kp RIGHT
+				&kp LC(X)	&kp LC(C)	&mt LS(LC(V)) LS(INSERT)				&kp HOME		&kp none		&kp END
+
+								&trans		&trans			&mo 2		&trans
             >;
         };
 
@@ -294,7 +287,7 @@
 		&kp SEMI	&kp STAR	&kp UNDER	&kp MINUS	&kp PIPE		&kp N0		&kp N4		&kp N5		&kp N6		&kp COLON
 				&kp PLUS	&kp PERCENT	&kp AMPS						&kp N7		&kp N8		&kp N9
 
-								&mo 1		&mo 1			&trans		&trans
+								&trans		&mo 1			&trans		&trans
 	    >;
         };
 
