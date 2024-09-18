@@ -17,7 +17,7 @@
             key-positions = <0 1>;
             bindings = <&kp V>;
             layers = <0>;
-	    require-prior-idle-ms = 50;
+	    require-prior-idle-ms = <50>;
         };
 
         combo_q {
@@ -25,7 +25,7 @@
             key-positions = <1 2>;
             bindings = <&kp Q>;
             layers = <0>;
-	    require-prior-idle-ms = 50;
+	    require-prior-idle-ms = <50>;
         };
 
         combo_z {
@@ -33,7 +33,7 @@
             key-positions = <18 19>;
             bindings = <&kp Z>;
             layers = <0>;
-	    require-prior-idle-ms = 50;
+	    require-prior-idle-ms = <50>;
         };
 
         combo_apos {
@@ -41,7 +41,7 @@
             key-positions = <6 7>;
             bindings = <&kp APOS>;
 	    layers = <0>;
-	    require-prior-idle-ms = 100;
+	    require-prior-idle-ms = <100>;
         };
 
         combo_grave {
@@ -49,7 +49,7 @@
             key-positions = <5 6>;
             bindings = <&kp GRAVE>;
 	    layers = <0>;
-	    require-prior-idle-ms = 100;
+	    require-prior-idle-ms = <100>;
         };
 
         combo_fwslash {
@@ -57,7 +57,7 @@
             key-positions = <22 23>;
             bindings = <&kp SLASH>;
 	    layers = <0 2>;
-	    require-prior-idle-ms = 100;
+	    require-prior-idle-ms = <100>;
         };
 
         combo_bkslash {
@@ -65,7 +65,7 @@
             key-positions = <21 22>;
             bindings = <&kp BACKSLASH>;
 	    layers = <0 2>;
-	    require-prior-idle-ms = 100;
+	    require-prior-idle-ms = <100>;
         };
 
         combo_lt {
@@ -73,7 +73,7 @@
             key-positions = <3 12>;
             bindings = <&kp LT>;
 	    layers = <0 2>;
-	    require-prior-idle-ms = 50;
+	    require-prior-idle-ms = <50>;
         };
 
         combo_gt {
@@ -81,23 +81,7 @@
             key-positions = <4 13>;
             bindings = <&kp GT>;
 	    layers = <0 2>;
-	    require-prior-idle-ms = 50;
-        };
-
-        combo_lbrc {
-            timeout-ms = <40>;
-            key-positions = <0 9>;
-            bindings = <&kp LBRC>;
-	    layers = <0 2>;
-	    require-prior-idle-ms = 50;
-        };
-
-        combo_lbkt {
-            timeout-ms = <40>;
-            key-positions = <1 10>;
-            bindings = <&kp LBKT>;
-	    layers = <0 2>;
-	    require-prior-idle-ms = 50;
+	    require-prior-idle-ms = <50>;
         };
 
         combo_lpar {
@@ -105,23 +89,23 @@
             key-positions = <2 11>;
             bindings = <&kp LPAR>;
 	    layers = <0 2>;
-	    require-prior-idle-ms = 50;
+	    require-prior-idle-ms = <50>;
         };
 
-        combo_rbrc {
+        combo_lbkt {
             timeout-ms = <40>;
-            key-positions = <7 16>;
-            bindings = <&kp RBRC>;
+            key-positions = <1 10>;
+            bindings = <&kp LBKT>;
 	    layers = <0 2>;
-	    require-prior-idle-ms = 50;
+	    require-prior-idle-ms = <50>;
         };
 
-        combo_rbkt {
+        combo_lbrc {
             timeout-ms = <40>;
-            key-positions = <6 15>;
-            bindings = <&kp RBKT>;
+            key-positions = <0 9>;
+            bindings = <&kp LBRC>;
 	    layers = <0 2>;
-	    require-prior-idle-ms = 50;
+	    require-prior-idle-ms = <50>;
         };
 
         combo_rpar {
@@ -129,7 +113,23 @@
             key-positions = <5 14>;
             bindings = <&kp RPAR>;
 	    layers = <0 2>;
-	    require-prior-idle-ms = 50;
+	    require-prior-idle-ms = <50>;
+        };
+
+        combo_rbkt {
+            timeout-ms = <40>;
+            key-positions = <6 15>;
+            bindings = <&kp RBKT>;
+	    layers = <0 2>;
+	    require-prior-idle-ms = <50>;
+        };
+
+        combo_rbrc {
+            timeout-ms = <40>;
+            key-positions = <7 16>;
+            bindings = <&kp RBRC>;
+	    layers = <0 2>;
+	    require-prior-idle-ms = <50>;
         };
 
         combo_lshift {
@@ -137,7 +137,7 @@
             key-positions = <9 10>;
             bindings = <&sk LEFT_SHIFT>;
             layers = <0 2>;
-	    require-prior-idle-ms = 100;
+	    require-prior-idle-ms = <100>;
         };
 
         combo_rshift {
@@ -145,7 +145,7 @@
             key-positions = <15 16>;
             bindings = <&sk RIGHT_SHIFT>;
             layers = <0 2>;
-	    require-prior-idle-ms = 100;
+	    require-prior-idle-ms = <100>;
         };
 
         combo_bspc {
@@ -153,7 +153,7 @@
             key-positions = <14 15>;
             bindings = <&kp BSPC>;
 	    layers = <0 2>;
-	    require-prior-idle-ms = 100;
+	    require-prior-idle-ms = <100>;
         };
 
         combo_del {
@@ -161,7 +161,7 @@
             key-positions = <10 11>;
             bindings = <&kp DEL>;
 	    layers = <0 2>;
-	    require-prior-idle-ms = 100;
+	    require-prior-idle-ms = <100>;
         };
 
         combo_tab {
@@ -169,7 +169,7 @@
             key-positions = <9 11>;
             bindings = <&kp TAB>;
 	    layers = <0 2>;
-	    require-prior-idle-ms = 150;
+	    require-prior-idle-ms = <150>;
         };
 
         combo_capsword {
@@ -177,7 +177,7 @@
             key-positions = <11 14>;
             bindings = <&caps_word>;
             layers = <0 2>;
-	    require-prior-idle-ms = 200;
+	    require-prior-idle-ms = <200>;
         };
 
         combo_caps {
@@ -185,7 +185,7 @@
             key-positions = <0 7>;
             bindings = <&kp CAPSLOCK>;
             layers = <0 2>;
-	    require-prior-idle-ms = 200;
+	    require-prior-idle-ms = <200>;
         };
 
         combo_esc {
@@ -193,7 +193,7 @@
             key-positions = <9 10 11>;
             bindings = <&kp ESCAPE>;
 	    layers = <0 2>;
-	    require-prior-idle-ms = 50;
+	    require-prior-idle-ms = <50>;
         };
 
         combo_enter {
@@ -201,7 +201,7 @@
             key-positions = <14 15 16>;
             bindings = <&kp ENTER>;
 	    layers = <0 2>;
-	    require-prior-idle-ms = 50;
+	    require-prior-idle-ms = <50>;
         };
 
         combo_lclk {
@@ -209,7 +209,7 @@
             key-positions = <11 20>;
             bindings = <&mkp LCLK>;
 	    layers = <0 2>;
-	    require-prior-idle-ms = 50;
+	    require-prior-idle-ms = <50>;
         };
 
         combo_rclk {
@@ -217,7 +217,7 @@
             key-positions = <10 19>;
             bindings = <&mkp RCLK>;
 	    layers = <0 2>;
-	    require-prior-idle-ms = 50;
+	    require-prior-idle-ms = <50>;
         };
 
         combo_mclk {
@@ -225,7 +225,7 @@
             key-positions = <9 18>;
             bindings = <&mkp MCLK>;
 	    layers = <0 2>;
-	    require-prior-idle-ms = 50;
+	    require-prior-idle-ms = <50>;
         };
 
         combo_softoff {
@@ -233,7 +233,7 @@
             key-positions = <21 22 23>;
             bindings = <&soft_off>;
 	    layers = <0 3>;
-	    require-prior-idle-ms = 500;
+	    require-prior-idle-ms = <500>;
         };
 
         combo_boot {
@@ -241,7 +241,7 @@
             key-positions = <18 19 20>;
             bindings = <&bootloader>;
 	    layers = <0 3>;
-	    require-prior-idle-ms = 500;
+	    require-prior-idle-ms = <500>;
         };
     };
 
