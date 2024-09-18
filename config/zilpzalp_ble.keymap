@@ -153,7 +153,7 @@
             key-positions = <14 15 16>;
             bindings = <&kp BSPC>;
 	    layers = <0 2>;
-	    require-prior-idle-ms = <100>;
+	    require-prior-idle-ms = <50>;
         };
 
         combo_del {
@@ -161,7 +161,7 @@
             key-positions = <9 10 11>;
             bindings = <&kp DEL>;
 	    layers = <0 2>;
-	    require-prior-idle-ms = <100>;
+	    require-prior-idle-ms = <50>;
         };
 
         combo_tab {
@@ -193,7 +193,7 @@
             key-positions = <10 11>;
             bindings = <&kp ESCAPE>;
 	    layers = <0 2>;
-	    require-prior-idle-ms = <50>;
+	    require-prior-idle-ms = <100>;
         };
 
         combo_enter {
@@ -201,7 +201,7 @@
             key-positions = <14 15>;
             bindings = <&kp ENTER>;
 	    layers = <0 2>;
-	    require-prior-idle-ms = <50>;
+	    require-prior-idle-ms = <100>;
         };
 
         combo_lclk {
