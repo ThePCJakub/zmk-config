@@ -6,9 +6,9 @@
 
 &lt { quick_tap_ms = <200>; };
 
-&soft_off { hold-time-ms = <5000>; };
+&soft_off { hold-time-ms = <1000>; };
     
-&kscan0 { wakeup-source; };
+// &kscan0 { wakeup-source; };
 
 #define COMBO_TIMEOUT 30
 
