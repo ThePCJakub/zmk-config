@@ -8,7 +8,7 @@
 
 &soft_off { hold-time-ms = <5000>; };
 
-#define COMBO_TIMEOUT 20
+#define COMBO_TIMEOUT 30
 
 / {
     combos {
