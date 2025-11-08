@@ -15,15 +15,15 @@ manifest:
     remote: zmkfirmware
     revision: main
     import: app/west.yml
-    # - name: zmk
-    # remote: petejohanson
-    # revision: feat/pointers-move-scroll
-    # import: app/west.yml
   - name: zmk-rgbled-widget
     remote: caksoylar
     revision: main
   - name: zmk-keyboards-zilpzalp
+    remote: kilipan
+    revision: main
+  - name: zmk-keyboards-akohekohe
     remote: grassfedreeve
     revision: main
+    path: modules/zmk-keyboards-akohekohe
   self:
     path: config
