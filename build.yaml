@@ -1,7 +1,7 @@
 include:
-  - board: seeeduino_xiao_ble
-    shield: zilpzalp_ble rgbled_adapter
-    artifact-name: zilpzalp
+  # - board: seeeduino_xiao_ble
+  #   shield: zilpzalp_ble rgbled_adapter
+  #   artifact-name: zilpzalp
   - board: seeeduino_xiao_ble
     shield: akohekohe rgbled_adapter
     artifact-name: akohekohe
